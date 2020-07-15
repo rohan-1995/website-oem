@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	
+    <head>
+        <title> OEM - Overseas Education & Migration </title>
+		<link href= "Style.css" rel = "stylesheet">
+		<img src = "OEM LOGO.jpg" width ='200'><hr> <hr>
+    </head>
+    <body> 
+	<div id = "container" class="work">
+        <p> <strong> Welcome to the OEM Website, You are one step away to receive the best advice from our professionals </strong> </p><hr> <hr>
+	
+	<form>
+       		<fieldset>
+			<legend>Please enter the following details</legend>
+			<label for= "fname">First Name</label>: <input type = "text" placeholder= John id = "fname"><br><br>
+			<label for= "lname">Last Name</label>: <input type = "text" placeholder= Travolta id = "lname"><br><br>
+			<label for= "email">Email</label>: <input type = "text" placeholder=your@email.com id = "email"><br><br>
+
+			<label for= "phone">Contact Number</label>: <input type = "text" placeholder=+61-999999999 id = "phone">
+			<br> <br>
+			Gender:<br>
+				<input type = "radio" name = "gender"> Male<br>
+				<input type = "radio" name = "gender"> Female<br>
+				<input type = "radio" name = "gender"> Other
+			<br> 
+			Age: <br>
+			<select>
+			<option> 0-20 </option><br>
+			<option> 20-40 </option><br>
+			<option> More than 40 </option><br>
+			</select> <br><br>
+			I need information on : <br> 
+				<input type = "checkbox">Student Visa Subclass 500<br>
+				<input type = "checkbox">Work Visa Subclass 485<br>
+				<input type = "checkbox">Tourist Visa Subclass 600<br><br>
+			Please mention the time you would like us to contact you back:<br>
+			<textarea cols="50" rows ="5"> </textarea>
+			<br><br>
+			<input type = "Submit" value = Submit> 
+			<input type = "reset" value = Clear All>	 
+		</fieldset>
+	</form>
+	<p>Are you trying to visit us? Click here on <a href="Linkedpage.html"> link </a> to get directions for office	</p> <hr>
+	<div id="map"></div>
+		<script>
+	// Initialize and add the map
+	function initMap() {
+	  // The location of Uluru
+	  var uluru = {lat: -27.2539245, lng: 153.0231239};
+	  // The map, centered at Uluru
+	  var map = new google.maps.Map(
+		  document.getElementById('map'), {zoom: 4, center: uluru});
+	  // The marker, positioned at Uluru
+	  var marker = new google.maps.Marker({position: uluru, map: map});
+	}
+		</script>
+		<!--Load the API from the specified URL
+		* The async attribute allows the browser to render the page while the API loads
+		* The key parameter will contain your own API key (which is not needed for this tutorial)
+		* The callback parameter executes the initMap() function
+		-->
+		<script async defer
+		src="https://maps.googleapis.com/maps/api/js?AIzaSyAeDyiF2rBbVDe0ycMYKCf0zXp_zYBUaAY=YOUR_API_KEY&callback=initMap">
+		</script></div>
+    </body>
+
+</html>

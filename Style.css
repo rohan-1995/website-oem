@@ -1,0 +1,63 @@
+/*Custom CSS */
+
+body {
+	/*background: #fed8b1; */
+	/*background: #93E9BE; */
+	
+	
+	
+}
+p{
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.work{
+	
+	font-family: Engraves Mt;
+	font-size: 22px;
+}
+#container{
+	width: 700px;
+	margin: 0 auto;
+	
+}
+#map {
+	height: 400px;  /* The height is 400 pixels */
+	width: 100%;  /* The width is the width of the web page */
+   }
+form{
+	display: block;
+	background-color: darkcyan;
+	background-image: url('bg.jpg');
+	border: double solid black 1px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	color: azure;
+}
+legend{
+	border: double solid black 1px;
+	
+}
+form input[type = "text"], form input[type = "radio"],form input[type = "checkbox"],form textarea{
+background: #fed8b1;
+font-size: 20px;
+color: green;
+border: solid 1px;
+padding: 10px;
+}
+form input[type = "submit"] {
+background: #fed8b1;
+font-size: 20px;
+border: solid 1px;
+padding: 10px;
+cursor: pointer;
+}
+a:link{
+	color: #0000FF;
+	text-decoration: none;	
+}
+a:visited{
+	color: red;	
+}
+a:hover{
+	background: white;
+text-decoration: underline;	
+}
